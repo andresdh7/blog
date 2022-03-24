@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&display=swap');
+
+* {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Almendra', serif;
+}
+
+header {
+    align-items: center;
+    background-color: black;
+    color: goldenrod;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+}
+
+.botones {
+    display: flex;
+
+}
+
+.inicio {
+    width: 200px; 
+}
+
+.nuevo {
+    width: 200px; 
+}
+
+.inicio:hover {
+    background-color: lightgreen;
+}
+
+.nuevo:hover {
+    background-color: lightsalmon;
+}
+
+.claqueta {
+    width: 60px;
+    margin: 20px;
+}
+
+body {
+    background-image: url('../assets/images/fondo.jpg');
+}
+
+main {
+    background-color: white;
+    padding-top: 10vh;
+    width: 60%;
+}
+
+footer {
+    align-items: center;
+    background-color: black;
+    bottom: 0;
+    color: goldenrod;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+}

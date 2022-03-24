@@ -1,0 +1,25 @@
+<div class="selector">
+    <select (change)="onChange($event)">
+        <option value="">Escoge género</option>
+        <option value="Acción">Acción</option>
+        <option value="Animación">Animación</option>
+        <option value="Aventuras">Aventuras</option>
+        <option value="Ciencia-ficción">Ciencia-ficción</option>
+        <option value="Comedia">Comedia</option>
+        <option value="Drama">Drama</option>
+        <option value="Histórica">Histórica</option>
+        <option value="Superhéroes">Superhéroes</option>
+        <option value="Terror">Terror</option>
+    </select>
+</div>
+<div class="entradas">
+    <div class="entrada" *ngFor="let post of arrPost">
+        <h3>{{ post.titulo }}</h3>
+        <hr>
+        <p>Comentario: {{ post.texto }}</p>
+        <p>Autor: {{ post.autor }}</p>
+        <p>Categoría: {{ post.categoria }}</p>
+        <p>Fecha: {{ post.fecha }}</p>
+        <img [src]="post.imagen" alt="cartel de la película">
+    </div>
+</div>

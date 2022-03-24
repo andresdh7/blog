@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&display=swap');
+
+* {
+    font-family: 'Almendra', serif;
+}
+
+.entradas {
+    background-color: antiquewhite;
+}
+
+.entrada {
+    padding: 10px 60px;
+}
+
+.selector {
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+}

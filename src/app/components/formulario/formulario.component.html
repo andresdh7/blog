@@ -1,0 +1,70 @@
+<div class="container">
+    <h2 class="my-4">Formulario Nueva Crítica</h2>
+    <div class="row">
+
+        <form class="formulario col-lg-6 col-sm-12 m-0 m-auto" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+            <div class="mb-3">
+                <label class="form-label">Título</label>
+                <input type="text" class="form-control" formControlName="titulo">
+                <p class="error" *ngIf="checkError('titulo', 'required')">
+                    El campo "nombre" es requerido.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Comentario</label>
+                <input type="text" class="form-control" formControlName="texto">
+                <p class="error" *ngIf="checkError('texto', 'required')">
+                    El campo "texto" es requerido.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Autor</label>
+                <input type="text" class="form-control" formControlName="autor">
+                <p class="error" *ngIf="checkError('autor', 'required')">
+                    El campo "autor" es requerido.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Fecha (formato: dd/mm/yyyy)</label>
+                <input type="text" class="form-control" formControlName="fecha">
+                <p class="error" *ngIf="checkError('fecha', 'required')">
+                    El campo "fecha" es requerido.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Categoría</label>
+                <select class="form-control" formControlName="categoria">
+                    <option value="">Escoge género</option>
+                    <option value="Acción">Acción</option>
+                    <option value="Animación">Animación</option>
+                    <option value="Aventuras">Aventuras</option>
+                    <option value="Ciencia-ficción">Ciencia-ficción</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Histórica">Histórica</option>
+                    <option value="Superhéroes">Superhéroes</option>
+                    <option value="Terror">Terror</option>
+                </select>
+                <p class="error" *ngIf="checkError('categoria', 'required')">
+                    El campo "categoría" es requerido.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Imagen</label>
+                <input type="text" class="form-control" formControlName="imagen">
+                <p class="error" *ngIf="checkError('imagen', 'required')">
+                    El campo "imagen" es requerido.
+                </p>
+            </div>
+
+            <input type="submit" value="Enviar" class="w-100 mt-2" [disabled]="!formulario.valid">
+
+        </form>
+    </div>
+</div>

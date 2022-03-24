@@ -1,0 +1,26 @@
+.container {
+    background-color: antiquewhite;
+    height: 125vh;
+    padding-top: 1px;
+}
+
+h2 {
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+
+input.ng-valid.ng-touched {
+    border: 3px solid lightgreen
+}
+
+input.ng-invalid.ng-touched {
+    border: 3px solid tomato;
+}
+
+.error {
+    color: tomato;
+}
